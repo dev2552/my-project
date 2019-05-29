@@ -7,18 +7,17 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
     </head>
-    <body>
+    <body class="grey lighten-3">
     	<nav>
 		    <div class="nav-wrapper white">
-		      <a href="#" class="brand-logo center">Logo</a>
-		      <ul id="nav-mobile" class="left">
-		        <li><a href="sass.html">Sass</a></li>
-		        <li><a href="badges.html">Components</a></li>
-		        <li><a href="collapsible.html">JavaScript</a></li>
-		      </ul>
+		      <a href="#" class="brand-logo center red-text">Th2-informatique</a>
 		    </div>
 		 </nav>
         {% block body %}{% endblock %}
+        <hr>
+        <footer>
+            build with love by zakariae aboud
+        </footer>
         <script src="{{asset('js/materialize.min.js')}}"></script>
         {% block javascripts %}{% endblock %}
     </body>
